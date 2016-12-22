@@ -24,7 +24,9 @@ client = MongoClient(mongodb_url)
 #get the default database:
 #db = client.get_default_database()  
 #db = client.test
-db = client.Employees
+db = client.students.ctec121
+# create dictionary
+student_record = {}
 
 print('connected to mongodb!, welcome to mongodb connection, have a fun and bit relax')
 #db.test_collection.insert({}) 
