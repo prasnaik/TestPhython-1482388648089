@@ -26,25 +26,15 @@ client = MongoClient(mongodb_url)
 #db = client.test
 db = client.Employees
 
-# Function to insert data into mongo db
-def insert():
+def read():
     try:
-    employeeId = raw_input('839441 :')
-    employeeName = raw_input('prashant :')
-    employeeAge = raw_input('34 :')
-    employeeCountry = raw_input('India :')
-        
-    db.Employees.insert_one(
-        {
-        "id": employeeId,
-            "name":employeeName,
-        "age":employeeAge,
-        "country":employeeCountry
-        })
-        print '\nInserted data successfully\n'
-    
+    empCol = db.Employees.find()
+    print '\n All data from EmployeeData Database \n'
+    for emp in empCol:
+        print emp
+
     except Exception, e:
-        print str(e)
+        print str(e))
 
 
 
