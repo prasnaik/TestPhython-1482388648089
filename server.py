@@ -24,13 +24,14 @@ client = MongoClient(mongodb_url)
 #get the default database:
 #db = client.get_default_database()  
 #db = client.test
-db = client.students.ctec121
-# create dictionary
-student_record = {}
-# set flag variable
-flag = True
-
+db = client.students
 print('connected to mongodb!, welcome to mongodb connection, have a fun and bit relax')
+# create dictionary
+#student_record = {}
+# set flag variable
+#flag = True
+db.students.insert( { item: "card", qty: 15 } )
+print('Rows inserted successfully')
 #db.test_collection.insert({}) 
 
 # VCAP_SERVICES mapping END
