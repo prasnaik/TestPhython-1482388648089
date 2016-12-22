@@ -25,13 +25,7 @@ client = MongoClient(mongodb_url)
 #db = client.get_default_database()  
 #db = client.test
 db = client.EmployeeData
-db.Employees.insert_one(
-        {
-        "id": employeeId,
-            "name":employeeName,
-        "age":employeeAge,
-        "country":employeeCountry
-        })
+
 print('connected to mongodb!, welcome to mongodb connection, have a fun and bit relax')
 #db.test_collection.insert({}) 
 
