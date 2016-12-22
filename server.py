@@ -30,7 +30,7 @@ print('connected to mongodb!, welcome to mongodb connection, have a fun and bit 
 #student_record = {}
 # set flag variable
 #flag = True
-db.students.insert( { item: "card", qty: 15 } )
+#db.students.insert( { item: "card", qty: 15 } )
 print('Rows inserted successfully')
 #db.test_collection.insert({}) 
 
