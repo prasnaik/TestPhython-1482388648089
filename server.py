@@ -18,7 +18,7 @@ os.chdir('static')
 
 services = os.getenv('VCAP_SERVICES')
 services_json = json.loads(services)
-mongodb_url = services_json['compose-for-mongodb1'][0]['credentials']['uri']
+mongodb_url = services_json['compose-for-mongodb'][0]['credentials']['uri']
 #connect:
 client = MongoClient(mongodb_url)  
 #get the default database:
