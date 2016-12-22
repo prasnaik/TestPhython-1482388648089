@@ -22,8 +22,9 @@ mongodb_url = services_json['compose-for-mongodb'][0]['credentials']['uri']
 #connect:
 client = MongoClient(mongodb_url)  
 #get the default database:
-db = client.get_default_database()  
+#db = client.get_default_database()  
 #db = client.test
+db = client.EmployeeData
 print('connected to mongodb!, welcome to mongodb connection, have a fun and bit relax')
 #db.test_collection.insert({}) 
 
