@@ -23,7 +23,7 @@ mongodb_url = services_json['compose-for-mongodb'][0]['credentials']['uri']
 client = MongoClient(mongodb_url)  
 #get the default database:
 db = client.get_default_database()  
-print('connected to mongodb!') 
+print('connected to mongodb!, welcome to mongodb connection, have a fun') 
 
 # VCAP_SERVICES mapping END
 httpd = Server(("", PORT), Handler)
