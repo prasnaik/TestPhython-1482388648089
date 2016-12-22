@@ -27,7 +27,13 @@ client = MongoClient(mongodb_url)
 db = client.students.ctec121
 # create dictionary
 student_record = {}
-
+# set flag variable
+flag = True
+# loop for data input
+while (flag):
+student_record = {'name':prashant,'grade':first}
+   # insert the record
+   db.insert(student_record)
 print('connected to mongodb!, welcome to mongodb connection, have a fun and bit relax')
 #db.test_collection.insert({}) 
 
