@@ -26,18 +26,6 @@ client = MongoClient(mongodb_url)
 #db = client.test
 db = client.Employees
 
-def read():
-    try:
-    empCol = db.Employees.find()
-    print '\n All data from EmployeeData Database \n'
-    for emp in empCol:
-        print emp
-
-    except Exception, e:
-        print str(e))
-
-
-
 print('connected to mongodb!, welcome to mongodb connection, have a fun and bit relax')
 #db.test_collection.insert({}) 
 
