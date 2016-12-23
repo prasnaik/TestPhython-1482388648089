@@ -25,7 +25,7 @@ client = MongoClient(mongodb_url)
 #db = client.get_default_database()  
 #db = client.test
 db = client.students
-print('connected to mongodb!, welcome to mongodb connection, have a fun and bit relax')
+print('connected to mongodb!, welcome to mongodb connection, have a fun')
 # create dictionary
 #student_record = {}
 # set flag variable
